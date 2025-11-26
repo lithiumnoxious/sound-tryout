@@ -28,7 +28,7 @@ void draw() {
 
 void keyPressed(){
  //press space to toot the horn! But don't allow it to keep starting
-if (key == ' ' && whistle.isPlaying()){
+if (key == ' ' && !whistle.isPlaying()){
  whistle.play(); 
   
 }
